@@ -1,6 +1,9 @@
 const StudentPage = () => {
   return (
-    <div className=''>StudentPage</div>
+<div
+>
+  تدرج من أبيض إلى رمادي
+</div>
   )
 }
 

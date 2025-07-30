@@ -4,6 +4,8 @@
 :root {
   /* --background: #ffffff;
   --foreground: #171717; */
+  --gradient-darkblue-hori: linear-gradient(-20deg,#032C4C 55% ,#01689A 100% );
+  --gradient-darkblue-ver: linear-gradient(150deg,#032C4C 60% ,#01689A 100% );
 }
 
 @theme inline {
@@ -11,6 +13,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-tajawal: var(--font-tajawal); */
+  
 }
 
 @media (prefers-color-scheme: light) {
