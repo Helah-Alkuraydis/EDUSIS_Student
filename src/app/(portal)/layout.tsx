@@ -12,16 +12,17 @@ export default function PortalLayout({
   return (
 
     <div className="h-screen flex">
-      <TopBar />
-
+      
       {/*RIGHT*/}
-      <div className="flex-3 md:w-[8%] lg:w-[16%] xl:w-[14%] mt-21 ml-4 ">
-        <Menu />
+      <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] ml-4">{/*mt-21*/ }
+       <Menu />
+      {/* <TopBar /> */}
+
       </div>
 
 
       {/*LEFT*/}
-      <div className="flex-19 md:w-[92%] lg:w-[84%] xl:w-[86%] mt-21 ">
+      <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] mt-21 ">
         <div className=" flex  gap-20 justify-between rounded-2xl bg-grad-horizontal ml-4 ">
           <div className="flex flex-col justify-end p-4">
 

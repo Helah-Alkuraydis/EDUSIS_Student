@@ -1,3 +1,4 @@
+"use client"
 import {
   LayoutDashboard, UserPen, SquarePen,
   BookText,
@@ -7,23 +8,29 @@ import {
   SquareLibrary,
   Info,
   LogOut,
-  User
+  User,
+  ChevronDown, ChevronUp 
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Input } from "@/components/ui/input"
+import { useState } from "react";
 
 
 const menuItems = [
   {
-    title: "MENU",
+    title: "الرئيسية",
     items: [
       {
         icon: LayoutDashboard,
         label: "الصفحة الرئيسية",
         href: "/",
       },
-
+      {
+        icon: BookPlus,
+        label: "تسجيل جديد",
+        href: "/newRegistration",
+      },
       {
         icon: SquarePen,
         label: "تسجيل المواد",
@@ -34,11 +41,7 @@ const menuItems = [
         label: "المقررات",
         href: "/courses",
       },
-      {
-        icon: BookPlus,
-        label: "تسجيل جديد",
-        href: "/newRegistration",
-      },
+
       {
         icon: BookCheck,
         label: "نتائج المقررات",
@@ -56,8 +59,8 @@ const menuItems = [
       },
     ],
   },
-  {
-    title: "",
+{
+  title: "",
     items: [
       {
         icon: UserPen,
@@ -77,42 +80,51 @@ const menuItems = [
 
 
     ]
-  },
+},
 
 ]
 const Menu = () => {
+    const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
+
+  const toggle = (label: string) => {
+    setOpenItems((prev) => ({
+      ...prev,
+      [label]: !prev[label],
+    }));
+  };
   return (
 
-    <div className=" w-fit h-screen pb-5 mr-4 ">
+    <div className="fixed bg-grad-vertical h-screen overflow-y-auto"> {/*pb-5 */}
 
       {/*SIDEBAR*/}
 
+      <div className='p-3'> {/*h-fit  rounded-xl*/}
+        <div className='flex flex-col'>
+          <Link href="/" className="flex mt-2 mr-2 ml-2 items-center justify-center shrink">
+            <Image src="/logo.png" alt='logo' width={132} height={132} />
+          </Link>
 
-      <div className='h-screen w-fit p-5 rounded-xl bg-grad-vertical flex flex-col '>
-        <Link href="/" className="flex mt-2 mr-2 ml-2 items-center justify-center shrink">
-          <Image src="/logo.png" alt='logo' width={132} height={132} />
-        </Link>
+          <div className="mt-2 text-sm">
+            {menuItems.map(i => (
+              <div className="flex flex-col py-5 " key={i.title}>
+                <span className=' hidden'>{i.title}</span>
+                {i.items.map(item => (
+                  <Link href={item.href} key={item.label} className="flex items-center justify-center lg:justify-start gap-2 mb-4 text-(--graylight) hover:bg-white/10 rounded-md p-2">
+                    <item.icon width={20} height={20} className=' shrink-0' />
+                    <span className='hidden lg:block'>
+                      {item.label}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            ))}</div>
 
-        <div className="mt-2 text-sm ">
-          {menuItems.map(i => (
-            <div className="flex flex-col py-5 " key={i.title}>
-              <span className=' hidden'>{i.title}</span>
-              {i.items.map(item => (
-                <Link href={item.href} key={item.label} className="flex items-center justify-center lg:justify-start gap-2 mb-4 text-(--graylight) hover:bg-white/10 rounded-md p-2">
-                  <item.icon width={20} height={20} className=' shrink-0' />
-                  <span className='hidden lg:block'>
-                    {item.label}
-                  </span>
-                </Link>
-              ))}
-            </div>
-          ))}</div>
-
+        </div>
       </div>
 
 
-    </div>
 
+    </div>
 
 
   )
