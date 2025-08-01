@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono , Tajawal } from "next/font/google";
 import "./globals.css";
+import { dir } from "console";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,9 +32,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar">
+    <html lang="ar" dir='rtl'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${tajawal.variable}`}
+        className={`${geistSans.variable} ${geistMono.variable} ${tajawal.variable}` }
       >
         {children}
       </body>
