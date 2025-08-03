@@ -13,7 +13,7 @@ const EnrolledCourses = () => {
 
         <div className="w-full flex items-center justify-between gap-4">
 
-          <div className="w-fit h-fit p-4 bg-[#EAF1FF] flex flex-col gap-4 items-start rounded-2xl justify-center ">
+          <div className="w-full h-fit p-4 bg-[#EAF1FF] flex flex-col gap-4 items-start rounded-2xl justify-center ">
             <span className= "text-[#0A4D7E] font-bold text-xl ml-10">أساسيات قواعد البيانات</span>
             <div className={"flex flex-col gap-3"}>
               <div className=" flex gap-1 items-center">
@@ -27,7 +27,7 @@ const EnrolledCourses = () => {
             </div>
           </div>
 
-           <div className="w-fit h-fit p-4 bg-[#EAF1FF] flex flex-col gap-4 items-start rounded-2xl justify-center">
+           <div className="w-full h-fit p-4 bg-[#EAF1FF] flex flex-col gap-4 items-start rounded-2xl justify-center">
             <span className= "text-[#0A4D7E] font-bold text-xl ml-10">البرمجة الكائنية</span>
             <div className={"flex flex-col gap-3"}>
               <div className=" flex gap-1 items-center">
@@ -42,7 +42,7 @@ const EnrolledCourses = () => {
           </div>
 
 
-          <div className="w-fit h-fit p-4 bg-[#EAF1FF] flex flex-col gap-4 items-start rounded-2xl justify-center">
+          <div className="w-full h-fit p-4 bg-[#EAF1FF] flex flex-col gap-4 items-start rounded-2xl justify-center">
             <span className= "text-[#0A4D7E] font-bold text-xl ml-10">البرمجة الكائنية</span>
             <div className={"flex flex-col gap-3"}>
               <div className=" flex gap-1 items-center">

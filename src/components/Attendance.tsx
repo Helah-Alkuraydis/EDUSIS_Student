@@ -56,9 +56,7 @@ const Attendance = () => {
             >
                 {item.status}
             </span></td>
-            <td>
-
-            </td>
+        
         </tr>
     );
     return (

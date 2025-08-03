@@ -24,12 +24,12 @@ const menuItems = [
       {
         icon: LayoutDashboard,
         label: "الصفحة الرئيسية",
-        href: "/",
+        href: "/student",
       },
       {
         icon: BookPlus,
         label: "تسجيل جديد",
-        href: "/newRegistration",
+        href: "/list/newRegistration",
       },
       {
         icon: SquarePen,
@@ -45,7 +45,7 @@ const menuItems = [
       {
         icon: BookCheck,
         label: "نتائج المقررات",
-        href: "/Exams",
+        href: "/list/examsResults",
       },
       {
         icon: FileBadge,

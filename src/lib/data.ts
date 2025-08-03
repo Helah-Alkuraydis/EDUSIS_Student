@@ -519,7 +519,122 @@ export const lessonsData = [
     teacher: "Julia Pittman",
   },
 ];
+export const ExamsResult = 
+  [
+  {
+    "exam": "الفصل الأول 1441",
+    "totalMarks": 55,
+    "percentage": 55.0,
+    "grade": "D",
+    "status": "Pass 🎉"
+  },
+  {
+    "exam": "جلسة امتحان الفصل الأول 1441",
+    "totalMarks": 183,
+    "percentage": 61.0,
+    "grade": "C",
+    "status": "Pass 🎉"
+  },
+  {
+    "exam": "اختبار منتصف الفصل 1442",
+    "totalMarks": 74,
+    "percentage": 74.0,
+    "grade": "B",
+    "status": "Pass 🎉"
+  },
+  {
+    "exam": "اختبار نهاية الفصل 1442",
+    "totalMarks": 38,
+    "percentage": 38.0,
+    "grade": "F",
+    "status": "Fail ❌"
+  },
+  {
+    "exam": "اختبار مهارات حاسوبية 1443",
+    "totalMarks": 92,
+    "percentage": 92.0,
+    "grade": "A",
+    "status": "Pass 🎉"
+  },
+  {
+    "exam": "جلسة تعويض الفصل الثاني 1442",
+    "totalMarks": 47,
+    "percentage": 47.0,
+    "grade": "F",
+    "status": "Fail ❌"
+  },
+  {
+    "exam": "تقييم عملي نظم تشغيل 1443",
+    "totalMarks": 88,
+    "percentage": 88.0,
+    "grade": "A",
+    "status": "Pass 🎉"
+  },
+  {
+    "exam": "اختبار تحريري 1444",
+    "totalMarks": 66,
+    "percentage": 66.0,
+    "grade": "C+",
+    "status": "Pass 🎉"
+  },
+  {
+    "exam": "جلسة استثنائية الفصل الصيفي 1442",
+    "totalMarks": 25,
+    "percentage": 25.0,
+    "grade": "F",
+    "status": "Fail ❌"
+  },
+  {
+    "exam": "اختبار نهائي حاسب 1",
+    "totalMarks": 79,
+    "percentage": 79.0,
+    "grade": "B+",
+    "status": "Pass 🎉"
+  },
+  {
+    "exam": "اختبار لغة عربية",
+    "totalMarks": 93,
+    "percentage": 93.0,
+    "grade": "A+",
+    "status": "Pass 🎉"
+  },
+  {
+    "exam": "امتحان تجريبي الفصل الثاني 1444",
+    "totalMarks": 59,
+    "percentage": 59.0,
+    "grade": "D",
+    "status": "Pass 🎉"
+  },
+  {
+    "exam": "تقييم مشروع تخرج 1443",
+    "totalMarks": 98,
+    "percentage": 98.0,
+    "grade": "A+",
+    "status": "Pass 🎉"
+  },
+  {
+    "exam": "اختبار تحريري رياضيات 1443",
+    "totalMarks": 35,
+    "percentage": 35.0,
+    "grade": "F",
+    "status": "Fail ❌"
+  },
+  {
+    "exam": "اختبار برمجة 1",
+    "totalMarks": 84,
+    "percentage": 84.0,
+    "grade": "A-",
+    "status": "Pass 🎉"
+  },
+  {
+    "exam": "جلسة استدراكية الفصل الأول 1444",
+    "totalMarks": 50,
+    "percentage": 50.0,
+    "grade": "D",
+    "status": "Pass 🎉"
+  }
 
+]
 export const examsData = [
   {
     id: 1,
@@ -1112,4 +1227,87 @@ export const calendarEvents = [
     end: new Date(2024, 7, 16, 14, 45),
   },
   
+];
+
+export const registrations = [
+  {
+    id: "AD002",
+    name: "شهد",
+    admissionDate: "05/05/2025",
+    applicationDate: "05/05/2025 15:14:45",
+    course: "الاعمال",
+    status: "نُفّذ",
+  },
+  {
+    id: "AD032",
+    name: "شهد",
+    admissionDate: "05/06/2025",
+    applicationDate: "05/06/2025 16:39:55",
+    course: "المحاسبة",
+    status: "تحت المراجعة",
+  },
+  {
+    id: "AD024",
+    name: "شهد",
+    admissionDate: "05/06/2025",
+    applicationDate: "05/06/2025 16:09:20",
+    course: "المحاسبة",
+    status: "مرفوض",
+  },
+  {
+    id: "AD028",
+    name: "شهد",
+    admissionDate: "05/06/2025",
+    applicationDate: "05/06/2025 16:31:28",
+    course: "المحاسبة",
+    status: "نُفّذ",
+  },
+  {
+    id: "AD016",
+    name: "شهد",
+    admissionDate: "05/06/2025",
+    applicationDate: "05/06/2025 15:21:48",
+    course: "المحاسبة",
+    status: "تحت المراجعة",
+  },
+  {
+    id: "AD014",
+    name: "شهد",
+    admissionDate: "05/06/2025",
+    applicationDate: "05/06/2025 15:12:42",
+    course: "المحاسبة",
+    status: "بانتظار",
+  },
+  {
+    id: "AD026",
+    name: "شهد",
+    admissionDate: "05/06/2025",
+    applicationDate: "05/06/2025 16:21:59",
+    course: "المحاسبة",
+    status: "نُفّذ",
+  },
+  {
+    id: "AD034",
+    name: "شهد",
+    admissionDate: "05/06/2025",
+    applicationDate: "05/06/2025 16:52:18",
+    course: "المحاسبة",
+    status: "مرفوض",
+  },
+  {
+    id: "AD022",
+    name: "شهد",
+    admissionDate: "05/06/2025",
+    applicationDate: "05/06/2025 15:57:18",
+    course: "المحاسبة",
+    status: "تحت المراجعة",
+  },
+  {
+    id: "AD020",
+    name: "شهد",
+    admissionDate: "05/06/2025",
+    applicationDate: "05/06/2025 15:40:09",
+    course: "المحاسبة",
+    status: "نُفّذ",
+  },
 ];
