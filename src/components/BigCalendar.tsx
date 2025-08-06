@@ -20,7 +20,6 @@ moment.locale("ar-sa", {
 });
 
 
-const localizer = momentLocalizer(moment);
 
 const messages = {
   next: "التالي",
@@ -45,6 +44,8 @@ function getStartOfWeek(date: Date): Date {
 }
 
 const BigCalendar = () => {
+  const localizer = momentLocalizer(moment);
+
   const [view, setView] = useState<View>(Views.WEEK);
   const handleOnChangeView = (selectedView: View) => {
     setView(selectedView);
@@ -54,15 +55,18 @@ const BigCalendar = () => {
     <Calendar className=""
       // defaultView={Views.WEEK}
       // defaultDate={getStartOfWeek(new Date())}
-     
       messages={messages}
       localizer={localizer}
       events={calendarEvents}
       startAccessor="start"
       endAccessor="end"
+      formats={{
+        dayFormat: (date, culture, localizer) =>
+          localizer!.format(date, "dddd", culture), // ← لاحظ علامة التعجب هنا !
+      }}
       views={["week", "day"]}
       view={view}
-      style={{ height: "100%" }}
+      style={{ height: "99%" }}
       onView={handleOnChangeView}
       rtl
       min={new Date(2025, 1, 0, 8, 0, 0)}

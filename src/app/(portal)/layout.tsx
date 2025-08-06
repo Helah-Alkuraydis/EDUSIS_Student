@@ -11,30 +11,24 @@ export default function PortalLayout({
 }>) {
   return (
 
-    <div className="h-screen flex">
+    <div className="h-screen flex gap-10 "> {/*bg-[#F7F8FA]*/}
 
       {/*RIGHT*/}
-      <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] ">{/*mt-21*/}
+      <div className="w-[14%] bg-grad-vertical md:w-[8%] lg:w-[16%] xl:w-[14%]   h-screen">
         <Menu />
       </div>
 
 
       {/*LEFT*/}
-      <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] ">
+      <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] overflow-scroll flex flex-col p-5">
         <TopBar />
-
-
-
         <section className=" mt-10">
           {children}
         </section>
-
-
-        {/* <div className="flex w-full md:w-[92%] lg:w-[84%] xl:w-[86%] "> */}
-
       </div>
+
+      
     </div>
 
-    // </div>
   );
 }

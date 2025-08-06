@@ -8,7 +8,7 @@ import * as React from "react"
 
 const StudentPage = () => {
   return (
-    <div className="flex justify-between  gap-10" >
+    <div className="p-4 flex gap-8 xl:flex-row" >
 
       {/* 👉 اليمين: المحتوى الأساسي (الداشبورد مثلًا) */}
       <div className="w-full justify-start flex flex-col gap-10">
@@ -18,7 +18,7 @@ const StudentPage = () => {
       </div>
       
       {/* 👈 يسار: التقويم والفعاليات */}
-      <div className="flex justify-center items-start ml-4 ">
+      <div className="hidden xl:flex justify-center items-start ml-4 ">
         <LeftSide />
       </div>
 

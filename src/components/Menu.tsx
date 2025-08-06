@@ -94,7 +94,7 @@ const Menu = () => {
   };
   return (
 
-    <div className="fixed bg-grad-vertical h-screen overflow-y-auto"> {/*pb-5 */}
+    <div className=" h-screen overflow-y-auto"> {/*pb-5 */}
 
       {/*SIDEBAR*/}
 

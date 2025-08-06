@@ -1326,37 +1326,37 @@ function getEventDate(offsetDays: number, hour: number, minute: number = 0) {
 export const calendarEvents = [
   // اليوم 0
   {
-    title: "Math",
+    title: "رياضيات",
     allDay: false,
     start: getEventDate(0, 8, 0),
     end: getEventDate(0, 8, 45),
   },
   {
-    title: "English",
+    title: "انجلش",
     allDay: false,
     start: getEventDate(0, 9, 0),
     end: getEventDate(0, 9, 45),
   },
   {
-    title: "Biology",
+    title: "احياء",
     allDay: false,
     start: getEventDate(0, 10, 0),
     end: getEventDate(0, 10, 45),
   },
   {
-    title: "Physics",
+    title: "فيزياء",
     allDay: false,
     start: getEventDate(0, 11, 0),
     end: getEventDate(0, 11, 45),
   },
   {
-    title: "Chemistry",
+    title: "كيمياء",
     allDay: false,
     start: getEventDate(0, 13, 0),
     end: getEventDate(0, 13, 45),
   },
   {
-    title: "History",
+    title: "تاريخ",
     allDay: false,
     start: getEventDate(0, 14, 0),
     end: getEventDate(0, 14, 45),
@@ -1364,25 +1364,25 @@ export const calendarEvents = [
 
   // اليوم 1
   {
-    title: "English",
+    title: "انجلش",
     allDay: false,
     start: getEventDate(1, 9, 0),
     end: getEventDate(1, 9, 45),
   },
   {
-    title: "Biology",
+    title: "احياء",
     allDay: false,
     start: getEventDate(1, 10, 0),
     end: getEventDate(1, 10, 45),
   },
   {
-    title: "Physics",
+    title: "فيزياء",
     allDay: false,
     start: getEventDate(1, 11, 0),
     end: getEventDate(1, 11, 45),
   },
   {
-    title: "History",
+    title: "تاريخ",
     allDay: false,
     start: getEventDate(1, 14, 0),
     end: getEventDate(1, 14, 45),
@@ -1390,25 +1390,25 @@ export const calendarEvents = [
 
   // اليوم 2
   {
-    title: "Math",
+    title: "رياضيات",
     allDay: false,
     start: getEventDate(2, 8, 0),
     end: getEventDate(2, 8, 45),
   },
   {
-    title: "Biology",
+    title: "احياء",
     allDay: false,
     start: getEventDate(2, 10, 0),
     end: getEventDate(2, 10, 45),
   },
   {
-    title: "Chemistry",
+    title: "كيمياء",
     allDay: false,
     start: getEventDate(2, 13, 0),
     end: getEventDate(2, 13, 45),
   },
   {
-    title: "History",
+    title: "تاريخ",
     allDay: false,
     start: getEventDate(2, 14, 0),
     end: getEventDate(2, 14, 45),
@@ -1416,25 +1416,25 @@ export const calendarEvents = [
 
   // اليوم 3
   {
-    title: "English",
+    title: "انجلش",
     allDay: false,
     start: getEventDate(3, 9, 0),
     end: getEventDate(3, 9, 45),
   },
   {
-    title: "Biology",
+    title: "احياء",
     allDay: false,
     start: getEventDate(3, 10, 0),
     end: getEventDate(3, 10, 45),
   },
   {
-    title: "Physics",
+    title: "فيزياء",
     allDay: false,
     start: getEventDate(3, 11, 0),
     end: getEventDate(3, 11, 45),
   },
   {
-    title: "History",
+    title: "تاريخ",
     allDay: false,
     start: getEventDate(3, 14, 0),
     end: getEventDate(3, 14, 45),
@@ -1442,31 +1442,31 @@ export const calendarEvents = [
 
   // اليوم 4
   {
-    title: "Math",
+    title: "رياضيات",
     allDay: false,
     start: getEventDate(4, 8, 0),
     end: getEventDate(4, 8, 45),
   },
   {
-    title: "English",
+    title: "انجلش",
     allDay: false,
     start: getEventDate(4, 9, 0),
     end: getEventDate(4, 9, 45),
   },
   {
-    title: "Physics",
+    title: "فيزياء",
     allDay: false,
     start: getEventDate(4, 11, 0),
     end: getEventDate(4, 11, 45),
   },
   {
-    title: "Chemistry",
+    title: "كيمياء",
     allDay: false,
     start: getEventDate(4, 13, 0),
     end: getEventDate(4, 13, 45),
   },
   {
-    title: "History",
+    title: "تاريخ",
     allDay: false,
     start: getEventDate(4, 14, 0),
     end: getEventDate(4, 14, 45),

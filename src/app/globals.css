@@ -2,8 +2,8 @@
 
 
 :root {
-  /* --background: #ffffff;
-  --foreground: #171717; */
+  --background: #F7F8FA ;
+  /*--foreground: #171717; */
   --gradient-darkblue-hori: linear-gradient(-20deg,#032C4C 55% ,#01689A 100% );
   --gradient-darkblue-ver: linear-gradient(150deg,#032C4C 60% ,#01689A 100% );
   --graylight: #8196A6;
@@ -18,16 +18,67 @@
   width: 100% !important;
   border: none !important;
 }
-
-.react-calendar__navigation__label__labelText {
-  font-weight: 600;
+.rbc-time-view .rbc-allday-cell {
+ display : none !important
 }
+.react-calendar__navigation__label__labelText {
+  font-weight: 600 !important ;
+}
+.rbc-toolbar-label {
+   text-align:left !important ;
+   padding:0px 20px !important;
 
+}
+.rbc-btn-group:last-child{
+  font-size:13px !important ;
+  font-weight: 500 !important ;
+}
+.rbc-event-content {
+  text-align: right !important;
+}
+.rbc-day-slot .rbc-event {
+  gap:8px !important;
+}
+.rbc-time-content{
+  border-top: 1px !important;
+  
+}
+.rbc-rtl .rbc-time-content > * + * > * {
+    border-left-width: none !important;
+    border-right: 1px ;
+}
+.rbc-day-slot .rbc-time-slot {
+  display : none !important;
+}
+.rbc-day-slot .rbc-events-container{
+  margin-right : 0px !important
+}
+.rbc-header {
+  height: 30px !important;
+   align-items: center;
+  justify-content: center;
+  
+}
 .react-calendar__tile--active {
   background-color: #c3ebfa !important;
   color: black !important;
 }
+.rbc-btn-group:first-child{
+    display : none !important;
 
+}
+
+.rbc-btn-group:last-child button{
+    border : none !important ;
+    background-color : #C6D6E1 !important ;
+    margin-left : 7px !important ;
+    border-radius: 20px !important ;/* زوايا مستديرة */
+}
+.rbc-toolbar button.rbc-active{
+  background-color:#45779D !important;
+  color:#FFFFFF !important ;
+  box-shadow : none !important ;
+}
 
 .bg-grad-horizontal {
   background: var(--color-graddarkblueHori);
@@ -51,7 +102,7 @@
 }
 
 body {
-  background: var(--background);
+  background: [var(--background)];
   color: var(--foreground);
   font-family: var(--font-tajawal), sans-serif; 
 }
