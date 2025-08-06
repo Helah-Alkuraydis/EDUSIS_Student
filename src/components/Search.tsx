@@ -6,7 +6,7 @@ const SearchFilters = () => {
                 <Image src="/search.png" alt="" width={14} height={14} />
                 <input type="text" 
                 placeholder="البحث..." 
-                className="w-[300px] p-2 bg-transparent outline-none" />
+                className="w-[220px] p-2 bg-transparent outline-none" />
               </div>
   );
 };

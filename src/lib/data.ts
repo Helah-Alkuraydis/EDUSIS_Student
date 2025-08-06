@@ -1082,151 +1082,395 @@ export const attendanceData = [
   },
 ];
 
+
+export const gradesbookData = [
+  {
+    semester: "الفصل الأول",
+    code: "0001QUN",
+    subject: "مبادئ التحليل الكمي -1",
+    name: "-",
+    grade: "A",
+    credit: 3,
+    gpa: 4.75,
+    obtained: {
+      midterm: "اختبار منتصف",
+      final: "اختبار نهائي",
+      assignments: "واجبات",
+      lab: "اختبار عملي"
+    },
+    finalGrades: 90
+  },
+  {
+    semester: "الفصل الأول",
+    code: "0002CS",
+    subject: "مقدمة في البرمجة",
+    name: "-",
+    grade: "B+",
+    credit: 4,
+    gpa: 4.5,
+    obtained: {
+      midterm: "اختبار منتصف",
+      final: "اختبار نهائي",
+      assignments: "مشاريع",
+      lab: "اختبار عملي"
+    },
+    finalGrades: 85
+  },
+  {
+    semester: "الفصل الأول",
+    code: "0003MTH",
+    subject: "تفاضل وتكامل",
+    name: "-",
+    grade: "B",
+    credit: 3,
+    gpa: 4.0,
+    obtained: {
+      midterm: "اختبار منتصف",
+      final: "اختبار نهائي",
+      assignments: "واجبات",
+      lab: null
+    },
+    finalGrades: 80
+  },
+  {
+    semester: "الفصل الأول",
+    code: "0004ENG",
+    subject: "اللغة الإنجليزية الأكاديمية",
+    name: "-",
+    grade: "A+",
+    credit: 2,
+    gpa: 5.0,
+    obtained: {
+      midterm: "اختبار منتصف",
+      final: "اختبار نهائي",
+      assignments: "مقالات",
+      lab: null
+    },
+    finalGrades: 95
+  },
+  {
+    semester: "الفصل الأول 2024",
+    code: "CS101",
+    subject: "مقدمة في علوم الحاسب",
+    name: "د. أحمد الزهراني",
+    grade: "A+",
+    credit: 3,
+    gpa: 5.0,
+    obtained: {
+      midterm: "اختبار منتصف",
+      final: "اختبار نهائي",
+      assignments: "واجبات",
+      lab: "معمل"
+    },
+    finalGrades: 98
+  },
+  {
+    semester: "الفصل الأول 2024",
+    code: "MATH203",
+    subject: "الاحتمالات والإحصاء",
+    name: "د. سمية الخالدي",
+    grade: "B+",
+    credit: 3,
+    gpa: 4.25,
+    obtained: {
+      midterm: "اختبار منتصف",
+      final: "اختبار نهائي",
+      assignments: "واجبات",
+      lab: null
+    },
+    finalGrades: 85
+  },
+  {
+    semester: "الفصل الأول 2024",
+    code: "ENG201",
+    subject: "اللغة الإنجليزية الفنية",
+    name: "أ. عبدالله الحربي",
+    grade: "A",
+    credit: 2,
+    gpa: 4.75,
+    obtained: {
+      midterm: "اختبار منتصف",
+      final: "اختبار نهائي",
+      assignments: "مشاريع",
+      lab: null
+    },
+    finalGrades: 91
+  },
+  {
+    semester: "الفصل الأول 2023",
+    code: "CS101",
+    subject: "مقدمة في علوم الحاسب",
+    name: "أ. فاطمة الحربي",
+    grade: "A+",
+    credit: 3,
+    gpa: 5.00,
+    obtained: {
+      midterm: "اختبار منتصف",
+      final: "اختبار نهائي",
+      assignments: "مشاريع وواجبات",
+      lab: "عملي"
+    },
+    finalGrades: 98
+  },
+  {
+    semester: "الفصل الثاني 2023",
+    code: "0005ISL",
+    subject: "الثقافة الإسلامية",
+    name: "-",
+    grade: "A",
+    credit: 2,
+    gpa: 4.75,
+    obtained: {
+      midterm: "اختبار منتصف",
+      final: "اختبار نهائي",
+      assignments: "واجبات",
+      lab: null
+    },
+    finalGrades: 90
+  },
+  {
+    semester: "الفصل الصيفي 2023",
+    code: "STAT201",
+    subject: "الإحصاء التطبيقي",
+    name: "د. عبدالله السبيعي",
+    grade: "B+",
+    credit: 3,
+    gpa: 4.25,
+    obtained: {
+      midterm: "اختبار منتصف",
+      final: "اختبار نهائي",
+      assignments: "حل تمارين",
+      lab: null
+    },
+    finalGrades: 85
+  },
+  {
+    semester: "الفصل الأول 2024",
+    code: "SE301",
+    subject: "هندسة البرمجيات",
+    name: "د. ريم الحسن",
+    grade: "A",
+    credit: 4,
+    gpa: 4.75,
+    obtained: {
+      midterm: "اختبار منتصف",
+      final: "اختبار نهائي",
+      assignments: "مشروع جماعي",
+      lab: null
+    },
+    finalGrades: 91
+  },
+  {
+    semester: "الفصل الثاني 2024",
+    code: "AI101",
+    subject: "مقدمة في الذكاء الاصطناعي",
+    name: "د. محمد الزهراني",
+    grade: "A+",
+    credit: 3,
+    gpa: 5.00,
+    obtained: {
+      midterm: "اختبار منتصف",
+      final: "اختبار نهائي",
+      assignments: "عرض تقديمي",
+      lab: "مختبر"
+    },
+    finalGrades: 97
+  },
+  {
+    semester: "الفصل الصيفي 2024",
+    code: "ENG202",
+    subject: "الكتابة الأكاديمية",
+    name: "أ. سارة الشمري",
+    grade: "B",
+    credit: 2,
+    gpa: 4.00,
+    obtained: {
+      midterm: "اختبار قصير",
+      final: "مقال نهائي",
+      assignments: "تدريبات كتابية",
+      lab: null
+    },
+    finalGrades: 82
+  },
+  {
+    semester: "الفصل الثاني",
+    code: "0005ISL",
+    subject: "الثقافة الإسلامية",
+    name: "-",
+    grade: "A",
+    credit: 2,
+    gpa: 4.75,
+    obtained: {
+      midterm: "اختبار منتصف",
+      final: "اختبار نهائي",
+      assignments: "واجبات",
+      lab: null
+    },
+    finalGrades: 90
+  }
+  ];
+
 // YOU SHOULD CHANGE THE DATES OF THE EVENTS TO THE CURRENT DATE TO SEE THE EVENTS ON THE CALENDAR
+function getEventDate(offsetDays: number, hour: number, minute: number = 0) {
+   const today = new Date();
+  const day = today.getDay(); // 0 = الأحد
+  const diff = day; // كم يوم نرجع عشان نوصل للأحد
+  const sunday = new Date(today);
+  sunday.setDate(today.getDate() - diff); // نرجع للأحد
+
+  sunday.setDate(sunday.getDate() + offsetDays); // نضيف الأيام من الأحد
+  sunday.setHours(hour, minute, 0, 0);
+  return sunday;
+}
+
 export const calendarEvents = [
+  // اليوم 0
   {
     title: "Math",
     allDay: false,
-    start: new Date(2024, 7, 12, 8, 0),
-    end: new Date(2024, 7, 12, 8, 45),
+    start: getEventDate(0, 8, 0),
+    end: getEventDate(0, 8, 45),
   },
   {
     title: "English",
     allDay: false,
-    start: new Date(2024, 7, 12, 9, 0),
-    end: new Date(2024, 7, 12, 9, 45),
+    start: getEventDate(0, 9, 0),
+    end: getEventDate(0, 9, 45),
   },
   {
     title: "Biology",
     allDay: false,
-    start: new Date(2024, 7, 12, 10, 0),
-    end: new Date(2024, 7, 12, 10, 45),
+    start: getEventDate(0, 10, 0),
+    end: getEventDate(0, 10, 45),
   },
   {
     title: "Physics",
     allDay: false,
-    start: new Date(2024, 7, 12, 11, 0),
-    end: new Date(2024, 7, 12, 11, 45),
+    start: getEventDate(0, 11, 0),
+    end: getEventDate(0, 11, 45),
   },
   {
     title: "Chemistry",
     allDay: false,
-    start: new Date(2024, 7, 12, 13, 0),
-    end: new Date(2024, 7, 12, 13, 45),
+    start: getEventDate(0, 13, 0),
+    end: getEventDate(0, 13, 45),
   },
   {
     title: "History",
     allDay: false,
-    start: new Date(2024, 7, 12, 14, 0),
-    end: new Date(2024, 7, 12, 14, 45),
+    start: getEventDate(0, 14, 0),
+    end: getEventDate(0, 14, 45),
   },
+
+  // اليوم 1
   {
     title: "English",
     allDay: false,
-    start: new Date(2024, 7, 13, 9, 0),
-    end: new Date(2024, 7, 13, 9, 45),
+    start: getEventDate(1, 9, 0),
+    end: getEventDate(1, 9, 45),
   },
   {
     title: "Biology",
     allDay: false,
-    start: new Date(2024, 7, 13, 10, 0),
-    end: new Date(2024, 7, 13, 10, 45),
+    start: getEventDate(1, 10, 0),
+    end: getEventDate(1, 10, 45),
   },
   {
     title: "Physics",
     allDay: false,
-    start: new Date(2024, 7, 13, 11, 0),
-    end: new Date(2024, 7, 13, 11, 45),
+    start: getEventDate(1, 11, 0),
+    end: getEventDate(1, 11, 45),
   },
-
   {
     title: "History",
     allDay: false,
-    start: new Date(2024, 7, 13, 14, 0),
-    end: new Date(2024, 7, 13, 14, 45),
+    start: getEventDate(1, 14, 0),
+    end: getEventDate(1, 14, 45),
   },
+
+  // اليوم 2
   {
     title: "Math",
     allDay: false,
-    start: new Date(2024, 7, 14, 8, 0),
-    end: new Date(2024, 7, 14, 8, 45),
+    start: getEventDate(2, 8, 0),
+    end: getEventDate(2, 8, 45),
   },
   {
     title: "Biology",
     allDay: false,
-    start: new Date(2024, 7, 14, 10, 0),
-    end: new Date(2024, 7, 14, 10, 45),
-  },
-
-  {
-    title: "Chemistry",
-    allDay: false,
-    start: new Date(2024, 7, 14, 13, 0),
-    end: new Date(2024, 7, 14, 13, 45),
-  },
-  {
-    title: "History",
-    allDay: false,
-    start: new Date(2024, 7, 14, 14, 0),
-    end: new Date(2024, 7, 13, 14, 45),
-  },
-  {
-    title: "English",
-    allDay: false,
-    start: new Date(2024, 7, 15, 9, 0),
-    end: new Date(2024, 7, 15, 9, 45),
-  },
-  {
-    title: "Biology",
-    allDay: false,
-    start: new Date(2024, 7, 15, 10, 0),
-    end: new Date(2024, 7, 15, 10, 45),
-  },
-  {
-    title: "Physics",
-    allDay: false,
-    start: new Date(2024, 7, 15, 11, 0),
-    end: new Date(2024, 7, 15, 11, 45),
-  },
-
-  {
-    title: "History",
-    allDay: false,
-    start: new Date(2024, 7, 15, 14, 0),
-    end: new Date(2024, 7, 15, 14, 45),
-  },
-  {
-    title: "Math",
-    allDay: false,
-    start: new Date(2024, 7, 16, 8, 0),
-    end: new Date(2024, 7, 16, 8, 45),
-  },
-  {
-    title: "English",
-    allDay: false,
-    start: new Date(2024, 7, 16, 9, 0),
-    end: new Date(2024, 7, 16, 9, 45),
-  },
-
-  {
-    title: "Physics",
-    allDay: false,
-    start: new Date(2024, 7, 16, 11, 0),
-    end: new Date(2024, 7, 16, 11, 45),
+    start: getEventDate(2, 10, 0),
+    end: getEventDate(2, 10, 45),
   },
   {
     title: "Chemistry",
     allDay: false,
-    start: new Date(2024, 7, 16, 13, 0),
-    end: new Date(2024, 7, 16, 13, 45),
+    start: getEventDate(2, 13, 0),
+    end: getEventDate(2, 13, 45),
   },
   {
     title: "History",
     allDay: false,
-    start: new Date(2024, 7, 16, 14, 0),
-    end: new Date(2024, 7, 16, 14, 45),
+    start: getEventDate(2, 14, 0),
+    end: getEventDate(2, 14, 45),
   },
-  
+
+  // اليوم 3
+  {
+    title: "English",
+    allDay: false,
+    start: getEventDate(3, 9, 0),
+    end: getEventDate(3, 9, 45),
+  },
+  {
+    title: "Biology",
+    allDay: false,
+    start: getEventDate(3, 10, 0),
+    end: getEventDate(3, 10, 45),
+  },
+  {
+    title: "Physics",
+    allDay: false,
+    start: getEventDate(3, 11, 0),
+    end: getEventDate(3, 11, 45),
+  },
+  {
+    title: "History",
+    allDay: false,
+    start: getEventDate(3, 14, 0),
+    end: getEventDate(3, 14, 45),
+  },
+
+  // اليوم 4
+  {
+    title: "Math",
+    allDay: false,
+    start: getEventDate(4, 8, 0),
+    end: getEventDate(4, 8, 45),
+  },
+  {
+    title: "English",
+    allDay: false,
+    start: getEventDate(4, 9, 0),
+    end: getEventDate(4, 9, 45),
+  },
+  {
+    title: "Physics",
+    allDay: false,
+    start: getEventDate(4, 11, 0),
+    end: getEventDate(4, 11, 45),
+  },
+  {
+    title: "Chemistry",
+    allDay: false,
+    start: getEventDate(4, 13, 0),
+    end: getEventDate(4, 13, 45),
+  },
+  {
+    title: "History",
+    allDay: false,
+    start: getEventDate(4, 14, 0),
+    end: getEventDate(4, 14, 45),
+  },
 ];
 
 export const registrations = [

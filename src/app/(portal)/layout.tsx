@@ -14,19 +14,18 @@ export default function PortalLayout({
     <div className="h-screen flex">
 
       {/*RIGHT*/}
-      <div className="flex-1/4 md:w-[8%] lg:w-[16%] xl:w-[14%] ">{/*mt-21*/}
+      <div className="w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] ">{/*mt-21*/}
         <Menu />
       </div>
 
 
       {/*LEFT*/}
-      <div className="flex-3/4 md:w-[92%] lg:w-[84%] xl:w-[86%] ">
+      <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] ">
         <TopBar />
 
 
 
         <section className=" mt-10">
-
           {children}
         </section>
 

@@ -34,7 +34,7 @@ const menuItems = [
       {
         icon: SquarePen,
         label: "تسجيل المواد",
-        href: "/subjectsRegistration",
+        href: "/list/subjectsRegistration",
       },
       {
         icon: BookText,
@@ -50,12 +50,12 @@ const menuItems = [
       {
         icon: FileBadge,
         label: "السجل الأكاديمي",
-        href: "/gradesBook",
+        href: "/list/gradesBook",
       },
       {
         icon: SquareLibrary,
         label: "جدول المحاضرات",
-        href: "/timeTable",
+        href: "/list/timeTable",
       },
     ],
   },
