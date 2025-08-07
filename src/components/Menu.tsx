@@ -9,7 +9,9 @@ import {
   Info,
   LogOut,
   User,
-  ChevronDown, ChevronUp 
+  ChevronDown, ChevronUp, 
+  School,
+  BanknoteArrowDown
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -57,12 +59,22 @@ const menuItems = [
         label: "جدول المحاضرات",
         href: "/list/timeTable",
       },
+         {
+        icon: School,
+        label: "المهام والوجبات",
+        href: "/list/assignment ",
+      }
     ],
   },
 {
   title: "",
     items: [
       {
+        icon: BanknoteArrowDown,
+        label: "الفواتير",
+        href: "/list/bills",
+      },
+       {
         icon: UserPen,
         label: "الملف الشخصي",
         href: "/list/profile",
@@ -76,8 +88,10 @@ const menuItems = [
         icon: LogOut,
         label: "تسجيل الخروج",
         href: "/logout",
-      }
+      },
+   
 
+      
 
     ]
 },

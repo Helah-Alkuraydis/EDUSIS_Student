@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const Bills = () => {
@@ -7,7 +8,7 @@ const Bills = () => {
 
             <div className="w-full flex items-center justify-between">
                 <span className="text-(--graytext) font-semibold text-m">الفواتير</span>
-                <button className="text-(--buttonColor) font-semibold text-m hover:bg-gray-500/10 rounded-2xl p-1 pr-2 pl-2" >عرض الكل</button>
+                <Link href ="/list/bills" className="text-(--buttonColor) font-semibold text-m hover:bg-gray-500/10 rounded-2xl p-1 pr-2 pl-2" >عرض الكل</Link>
             </div>
 
             <div className=" flex items-center gap-4">

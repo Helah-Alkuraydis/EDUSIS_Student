@@ -83,15 +83,12 @@ const Courses = () => {
                 <label className="text-sm font-medium">ترتيب حسب:</label>
                 <Select dir='rtl'>
                   <SelectTrigger className="w-[180px]">
-                    <SelectValue placeholder="تاريخ الرفع" />
+                    <SelectValue placeholder="الفصل " />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectGroup >
-                      <SelectItem value="apple">الاسم</SelectItem>
-                      <SelectItem value="banana">تاريخ القبول</SelectItem>
-                      <SelectItem value="blueberry">تاريخ الرفع</SelectItem>
-                      <SelectItem value="grapes">الفصل</SelectItem>
-                      <SelectItem value="pineapple">الحالة</SelectItem>
+                      <SelectItem value="apple">الفصل</SelectItem>
+                      
                     </SelectGroup>
                   </SelectContent>
                 </Select>

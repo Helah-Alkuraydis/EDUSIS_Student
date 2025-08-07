@@ -1374,6 +1374,83 @@ export const subjects = [
     ]
   }
 ];
+export const assignments = [
+  {
+    id: "1",
+    name: "تقييم محاسبة تكاليف",
+    assignmentFor: "المحاسبة",
+    assignType: "مشروع",
+    issuedDate: "2025-05-19T09:00:00",
+    submissionDate: "2025-05-19T09:00:00",
+    state: "Publish",
+  },
+  {
+    id: "2",
+    name: "تقييم محاسبة إدارية",
+    assignmentFor: "المحاسبة",
+    assignType: "اختبار",
+    issuedDate: "2025-06-01T10:00:00",
+    submissionDate: "2025-06-05T23:59:00",
+    state: "Publish",
+  },
+  {
+    id: "3",
+    name: "مشروع تقارير مالية",
+    assignmentFor: "المحاسبة",
+    assignType: "مشروع",
+    issuedDate: "2025-07-10T08:30:00",
+    submissionDate: "2025-07-20T16:00:00",
+    state: "Draft",
+  },
+  {
+    id: "4",
+    name: "اختبار محاسبة متقدمة",
+    assignmentFor: "المحاسبة",
+    assignType: "اختبار",
+    issuedDate: "2025-08-01T09:00:00",
+    submissionDate: "2025-08-02T11:00:00",
+    state: "Publish",
+  },
+];
+
+export const invoices = [
+  {
+    id: "inv-001",
+    semester: "442",
+    date: "09/02/2025",
+    invoiceRef: "-",
+    feesAmount: "$ 0.00",
+    status: "Draft",
+    invoice: "مسودة",
+  },
+  {
+    id: "inv-002",
+    semester: "441",
+    date: "10/02/2025",
+    invoiceRef: "INV-2025-001",
+    feesAmount: "$ 150.00",
+    status: "Paid",
+    invoice: "تم الدفع",
+  },
+  {
+    id: "inv-003",
+    semester: "432",
+    date: "11/02/2025",
+    invoiceRef: "INV-2025-002",
+    feesAmount: "$ 200.00",
+    status: "Unpaid",
+    invoice: "غير مدفوع",
+  },
+  {
+    id: "inv-004",
+    semester: "431",
+    date: "12/02/2025",
+    invoiceRef: "INV-2025-003",
+    feesAmount: "$ 99.99",
+    status: "Pending",
+    invoice: "بانتظار الدفع",
+  },
+];
 
 // YOU SHOULD CHANGE THE DATES OF THE EVENTS TO THE CURRENT DATE TO SEE THE EVENTS ON THE CALENDAR
 function getEventDate(offsetDays: number, hour: number, minute: number = 0) {
