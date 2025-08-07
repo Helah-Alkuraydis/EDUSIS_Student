@@ -176,12 +176,12 @@ const GradesBook = () => {
   );
 
   return (
-    <div className="bg-white p-4 rounded-md flex-1 m-4 mt-0 gap-8">
+    <div className="bg-white rounded-md flex-1 mt-0 gap-8">
       {/* HEADER & FILTERS */}
       <div className="flex items-center justify-between mb-5">
         <h1 className="hidden md:block text-xl text-[#0A4D7E] font-semibold">السجل الأكاديمي</h1>
-
-        <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
+        </div>
+        <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto mb-8">
           <Search />
 
           <div className="flex items-end gap-4 text-gray-600">
@@ -220,7 +220,6 @@ const GradesBook = () => {
               </Select>
             </div>
           </div>
-        </div>
       </div>
 
       {/* TABLES PER SEMESTER */}
@@ -242,7 +241,7 @@ const GradesBook = () => {
       </div>
 
       {/* PAGINATION (اختياري لو بتستخدمه لكل الجدول كامل) */}
-      {/* <Pagination /> */}
+      <Pagination />
     </div>
   );
 };

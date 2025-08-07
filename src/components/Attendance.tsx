@@ -1,8 +1,7 @@
-import { Calendar, Clock } from "lucide-react"
 
 import Table from "@/components/Table";
-import Image from "next/image";
 import { attendanceData } from "@/lib/data";
+import Link from "next/link";
 
 type Class = {
     id: number;
@@ -66,7 +65,7 @@ const Attendance = () => {
 
             <div className="w-full flex items-center justify-between">
                 <span className="text-(--graytext) font-semibold text-m">سجل الحضور</span>
-                <button className="text-(--buttonColor) font-semibold text-m hover:bg-gray-500/10 rounded-2xl p-1 pr-2 pl-2" >عرض الكل</button>
+                <Link href ="/list/presentRecords" className="text-(--buttonColor) font-semibold text-m hover:bg-gray-500/10 rounded-2xl p-1 pr-2 pl-2" >عرض الكل</Link>
             </div>
 
             <Table columns={columns} renderRow={renderRow} data={attendanceData} />

@@ -28,18 +28,18 @@ const menuItems = [
       },
       {
         icon: BookPlus,
-        label: "تسجيل جديد",
-        href: "/list/newRegistration",
-      },
-      {
-        icon: SquarePen,
         label: "تسجيل المواد",
         href: "/list/subjectsRegistration",
       },
+      // {
+      //   icon: SquarePen,
+      //   label: "تسجيل المواد",
+      //   href: "/list/subjectsRegistration",
+      // },
       {
         icon: BookText,
         label: "المقررات",
-        href: "/courses",
+        href: "/list/courses",
       },
 
       {
@@ -65,7 +65,7 @@ const menuItems = [
       {
         icon: UserPen,
         label: "الملف الشخصي",
-        href: "/profile",
+        href: "/list/profile",
       },
       {
         icon: Info,

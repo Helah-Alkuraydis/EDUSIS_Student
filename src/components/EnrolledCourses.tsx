@@ -1,5 +1,6 @@
 
 import { Calendar, Clock } from "lucide-react"
+import Link from "next/link"
 
 
 
@@ -8,7 +9,7 @@ const EnrolledCourses = () => {
      <div className="w-full flex flex-col gap-4 ">
         <div className="w-full flex items-center justify-between">
           <span className="text-(--graytext) font-semibold text-m">المقررات المسجلة</span>
-          <button className="text-(--buttonColor) font-semibold text-m hover:bg-gray-500/10 rounded-2xl p-1 pr-2 pl-2" >عرض الكل</button>
+           <Link href ="/list/timeTable" className="text-(--buttonColor) font-semibold text-m hover:bg-gray-500/10 rounded-2xl p-1 pr-2 pl-2" >عرض الكل</Link>
         </div>
 
         <div className="w-full flex items-center justify-between gap-4">

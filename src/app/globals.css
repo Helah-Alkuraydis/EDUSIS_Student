@@ -38,34 +38,56 @@
 }
 .rbc-day-slot .rbc-event {
   gap:8px !important;
+  /* margin-top: 10px ; */
+ 
 }
 .rbc-time-content{
   border-top: 1px !important;
   
 }
-.rbc-rtl .rbc-time-content > * + * > * {
+
+/* .rbc-rtl .rbc-time-content > * + * > * {
     border-left-width: none !important;
     border-right: 1px ;
+} */
+.rbc-time-content > .rbc-time-gutter{
+  color : #2E2F2F !important;
+  font-weight : 600px !important;
 }
-.rbc-day-slot .rbc-time-slot {
+
+.rbc-event-label{
+  display:none !important;
+}
+/* .rbc-day-slot .rbc-time-slot {
   display : none !important;
-}
+} */
 .rbc-day-slot .rbc-events-container{
   margin-right : 0px !important
 }
+
+.rbc-today {
+    background-color: #d1e8f9;
+}
 .rbc-header {
-  height: 30px !important;
-   align-items: center;
-  justify-content: center;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color : #2E2F2F !important;
+  height: 40px !important;
+  /* margin-bottom : 10px !important; */
   
 }
+.rbc-day-slot .rbc-events-container {
+  left: 6px !important;
+ }
+
 .react-calendar__tile--active {
   background-color: #c3ebfa !important;
   color: black !important;
+  
 }
 .rbc-btn-group:first-child{
     display : none !important;
-
 }
 
 .rbc-btn-group:last-child button{
@@ -79,7 +101,38 @@
   color:#FFFFFF !important ;
   box-shadow : none !important ;
 }
-
+.rbc-event {
+  border: none !important;
+  margin-top: 5px !important;
+  width: 99% !important;
+}
+.rbc-time-view{
+   border-radius: 0.75rem !important;
+}
+.rbc-event:nth-child(1) {
+  background-color: #015BA0 !important;
+}
+.rbc-event:nth-child(2) {
+  background-color: #0077b6 !important;
+}
+.rbc-event:nth-child(3) {
+  background-color: #0096c7 !important;
+}
+.rbc-event:nth-child(4) {
+  background-color: #00b4d8 !important;
+}
+.rbc-event:nth-child(5) {
+  background-color: #48CAE4 !important;
+}
+.rbc-event:nth-child(6) {
+  background-color: #90E0EF !important;
+}
+.rbc-event:nth-child(7) {
+  background-color: #ADE8F4 !important;
+}
+.rbc-event:nth-child(8) {
+  background-color: #BCECF6 !important;
+}
 .bg-grad-horizontal {
   background: var(--color-graddarkblueHori);
 }

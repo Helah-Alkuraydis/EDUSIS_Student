@@ -2,7 +2,6 @@ import Pagination from '@/components/Pagination';
 import Search from '@/components/Search';
 import Table from '@/components/Table';
 import { ExamsResult } from '@/lib/data';
-import { ArrowDownUp, Funnel } from 'lucide-react';
 import {
     Select,
     SelectContent,
@@ -19,7 +18,7 @@ type ExamRecord = {
     status: string;
 };
 
-const columns  = [
+const columns = [
     {
         header: "الامتحان",
         accessor: "exam",
@@ -74,55 +73,55 @@ const NewRegistration = () => {
     );
 
     return (
-        <div className="bg-white p-4 rounded-md flex-1 m-4 mt-0 gap-8">
-            {/* TOP */}
-            <div className="flex items-center justify-between ">
-                <h1 className="hidden md:block text-xl text-[#0A4D7E]  font-semibold mb-5">نتائج المقررات</h1>
-                <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
-                    <Search />
+        <div className="bg-white rounded-md flex-1 mt-0 gap-8">
+            {/* HEADER & FILTERS */}
+            <div className="flex items-center justify-between mb-5">
+                <h1 className="hidden md:block text-xl text-[#0A4D7E] font-semibold">نتائج المقررات</h1>
+            </div>
+            <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto mb-8">
+                <Search />
 
 
-                    <div className="flex items-end gap-4 self-end text-(--graytext)">
-                        <div className="flex items-center gap-2">
-                            <label className="text-sm font-medium">ترتيب حسب:</label>
-                            <Select dir='rtl'>
-                                <SelectTrigger className="w-[180px]">
-                                    <SelectValue placeholder="تاريخ الرفع" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                    <SelectGroup >
-                                        <SelectItem value="apple">الامتحان</SelectItem>
-                                        <SelectItem value="banana">الدرجة الكلية</SelectItem>
-                                        <SelectItem value="blueberry">النسبة المئوية</SelectItem>
-                                        <SelectItem value="grapes">التقدير</SelectItem>
-                                        <SelectItem value="pineapple">الحالة</SelectItem>
-                                    </SelectGroup>
-                                </SelectContent>
-                            </Select>
-                        </div>
-
-                        <div className="flex items-center gap-2">
-                            <label className="text-sm font-medium">تصنيف حسب:</label>
-                           <Select dir='rtl'>
-                                <SelectTrigger className="w-[180px]">
-                                    <SelectValue placeholder="افتراضي" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                    <SelectGroup >
-                                        <SelectItem value="apple">Fail</SelectItem>
-                                        <SelectItem value="banana">Pass</SelectItem>
-                                    </SelectGroup>
-                                </SelectContent>
-                            </Select>
-                        </div>
-
+                <div className="flex items-end gap-4 self-end text-(--graytext)">
+                    <div className="flex items-center gap-2">
+                        <label className="text-sm font-medium">ترتيب حسب:</label>
+                        <Select dir='rtl'>
+                            <SelectTrigger className="w-[180px]">
+                                <SelectValue placeholder="تاريخ الرفع" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectGroup >
+                                    <SelectItem value="apple">الامتحان</SelectItem>
+                                    <SelectItem value="banana">الدرجة الكلية</SelectItem>
+                                    <SelectItem value="blueberry">النسبة المئوية</SelectItem>
+                                    <SelectItem value="grapes">التقدير</SelectItem>
+                                    <SelectItem value="pineapple">الحالة</SelectItem>
+                                </SelectGroup>
+                            </SelectContent>
+                        </Select>
                     </div>
+
+                    <div className="flex items-center gap-2">
+                        <label className="text-sm font-medium">تصنيف حسب:</label>
+                        <Select dir='rtl'>
+                            <SelectTrigger className="w-[180px]">
+                                <SelectValue placeholder="افتراضي" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectGroup >
+                                    <SelectItem value="apple">Fail</SelectItem>
+                                    <SelectItem value="banana">Pass</SelectItem>
+                                </SelectGroup>
+                            </SelectContent>
+                        </Select>
+                    </div>
+
                 </div>
             </div>
             {/* LIST */}
             <Table columns={columns} renderRow={renderRow} data={ExamsResult} />
             {/* PAGINATION */}
-            <Pagination  />
+            <Pagination />
         </div>
     );
 };
