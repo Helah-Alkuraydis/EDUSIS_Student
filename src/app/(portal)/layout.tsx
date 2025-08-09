@@ -1,7 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
+
 import Menu from "@/components/Menu";
-import LeftSide from "@/components/LeftSide";
 import TopBar from "@/components/TopBar";
 
 export default function PortalLayout({

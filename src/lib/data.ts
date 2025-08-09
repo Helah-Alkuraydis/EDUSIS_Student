@@ -1375,6 +1375,11 @@ export const subjects = [
   }
 ];
 
+// fakeData.ts
+export const users = [
+  { email: "student@openeducat.com", password: "123", role: "student" },
+];
+
 // YOU SHOULD CHANGE THE DATES OF THE EVENTS TO THE CURRENT DATE TO SEE THE EVENTS ON THE CALENDAR
 function getEventDate(offsetDays: number, hour: number, minute: number = 0) {
    const today = new Date();

@@ -6,6 +6,7 @@
   /*--foreground: #171717; */
   --gradient-darkblue-hori: linear-gradient(-20deg,#032C4C 55% ,#01689A 100% );
   --gradient-darkblue-ver: linear-gradient(150deg,#032C4C 60% ,#01689A 100% );
+  --gradient-darkblue-ver1: linear-gradient(150deg,#D1F2FF 2%,#026495 59%,#02436A 79%, #032C4C 100%);
   --graylight: #8196A6;
   --graytext: #2E2F2F;
   --buttonColor:#1786D9;
@@ -14,6 +15,9 @@
   background: var(--color-graddarkblueVer);
 }
 
+.bg-grad-verticall {
+  background: var(--color-graddarkblueVer1);
+}
 .react-calendar {
   width: 100% !important;
   border: none !important;
@@ -143,6 +147,8 @@
   --font-tajawal: var(--font-tajawal); */
   --color-graddarkblueVer:linear-gradient(150deg,#032C4C 60% ,#01689A 100% );
   --color-graddarkblueHori:  linear-gradient(-20deg,#032C4C 55% ,#01689A 100% );
+  --color-graddarkblueVer1: linear-gradient(-20deg,#D1F2FF 2%,#026495 59%,#02436A 79%, #032C4C 100%);
+
   --color-graylight: var(--graylight);
   
 }

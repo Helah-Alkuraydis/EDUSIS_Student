@@ -15,6 +15,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Input } from "@/components/ui/input"
 import { useState } from "react";
+import { usePathname } from "next/navigation"; 
 
 
 const menuItems = [
@@ -75,7 +76,7 @@ const menuItems = [
       {
         icon: LogOut,
         label: "تسجيل الخروج",
-        href: "/logout",
+        href: "/",
       }
 
 
@@ -84,7 +85,8 @@ const menuItems = [
 
 ]
 const Menu = () => {
-    const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
+  const pathname = usePathname(); // ✅ يعطيك المسار الحالي
+  const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
 
   const toggle = (label: string) => {
     setOpenItems((prev) => ({
@@ -108,14 +110,25 @@ const Menu = () => {
             {menuItems.map(i => (
               <div className="flex flex-col py-5 " key={i.title}>
                 <span className=' hidden'>{i.title}</span>
-                {i.items.map(item => (
-                  <Link href={item.href} key={item.label} className="flex items-center justify-center lg:justify-start gap-2 mb-4 text-(--graylight) hover:bg-white/10 rounded-md p-2">
-                    <item.icon width={20} height={20} className=' shrink-0' />
-                    <span className='hidden lg:block'>
-                      {item.label}
-                    </span>
-                  </Link>
-                ))}
+               {i.items.map(item => {
+                  const isActive = pathname === item.href; // ✅ فحص إذا الرابط الحالي هو نفسه
+
+                  return (
+                    <Link
+                      href={item.href}
+                      key={item.label}
+                      className={`flex items-center justify-center lg:justify-start gap-2 mb-4 rounded-md p-2 transition-colors
+                        ${isActive ? " text-white" : "text-(--graylight) hover:bg-white/10"}`}
+                    >
+                      <item.icon
+                        width={20}
+                        height={20}
+                        className={`shrink-0 ${isActive ? "text-white" : ""}`}
+                      />
+                      <span className='hidden lg:block'>{item.label}</span>
+                    </Link>
+                  );
+                })}
               </div>
             ))}</div>
 

@@ -2,13 +2,8 @@
 
 import { DiamondPlus, X } from "lucide-react";
 import dynamic from "next/dynamic";
-import Image from "next/image";
 import { JSX, useState } from "react";
 
-// USE LAZY LOADING
-
-// import TeacherForm from "./forms/TeacherForm";
-// import StudentForm from "./forms/StudentForm";
 
 
 const SubjectForm = dynamic(() => import("./forms/SubjectForm"), {
